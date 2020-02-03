@@ -43,7 +43,14 @@ namespace FizzBuzz
                  }
                  if ((i % bongNumber) == 0)
                  {
-                     response = "Bong";
+                     if ((i % fezzNumber) == 0)
+                     {
+                         response = "FezzBong";
+                     }
+                     else
+                     {
+                         response = "Bong";
+                     }
                  }
                  if (string.IsNullOrEmpty(response))
                  {
