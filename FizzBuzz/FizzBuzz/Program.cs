@@ -21,12 +21,17 @@ namespace FizzBuzz
             int buzzNumber = 5;
             int bangNumber = 7;
             int bongNumber = 11;
+            int fezzNumber = 13;
              for (int i= 1; i <= countTotal; i++)
              {
                  string response = "";
                  if ((i % fizzNumber) == 0)
                  {
                     response = "Fizz";
+                 }
+                 if ((i % fezzNumber) == 0)
+                 {
+                     response = response + "Fezz";
                  }
                  if ((i % buzzNumber) == 0)
                  {
